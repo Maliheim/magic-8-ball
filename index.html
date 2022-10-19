@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Magic 8 Ball</title>
   </head>
   <body>
     <div class="content">
       <div class="answers">
-        <img src="./images/img/magic8ball_start.png" alt="" />
+        <img src="./images/magic8ball_start.png" alt="" />
       </div>
       <div class="questionField">
         <label for="questionInput">Ask me a question</label>
         <input type="text" id="questionInput" />
-        <button class="inputBtn">Ask</button>
+        <button id="inputBtn">Ask</button>
       </div>
     </div>
   </body>
