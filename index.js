@@ -1,12 +1,15 @@
 let inputField = document.getElementById("questionInput");
 let inputBtn = document.getElementById("inputBtn");
+let newBtn = document.getElementById("newBtn");
+let baseImg = document.getElementById("baseImg");
 
 let randomNum = () => {
   let min = 1;
   let max = 21;
   return Math.floor(Math.random() * (max - min) + min);
 };
-console.log(randomNum());
+
+let shakeImg = () => {};
 
 let newImg = () => {
   let img = `./images/magic8ball_${randomNum()}.png`;
@@ -35,6 +38,11 @@ inputBtn.addEventListener("click", () => {
   }
 });
 
+newBtn.addEventListener("click", () => {
+  inputField.value = "";
+  document.querySelector(".answers").innerHTML = "";
+});
+// TODO || Make default img reappear after clearing inner HTML ||
 //// make img generated draw from random number that is generated
 // TODO To do Highlight
 //   Normal Comment

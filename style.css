@@ -1,65 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.content{
-    border: 2px solid rgb(42, 42, 42);
-    background-color: rgb(42, 42, 42);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.content {
+  border: 2px solid rgb(42, 42, 42);
+  background-color: rgb(42, 42, 42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.answers{
-    /* outline: 2px solid yellow; */
-    width: 420px;
-    height: 420px;
-    position: relative;
+.answers {
+  /* outline: 2px solid yellow; */
+  width: 420px;
+  height: 420px;
+  position: relative;
 }
 
-
-
-.content img{
-    /* outline: 2px solid red; */
-    width: 420px;
-    margin-bottom: 42px;
-    position: absolute;
+.content img {
+  /* outline: 2px solid red; */
+  width: 420px;
+  margin-bottom: 42px;
+  position: absolute;
 }
 
-.questionField label{
-    display: block;
-    text-align: center;
-    font-size: 42px;
-    color: aliceblue;
-    margin-bottom: 16px;
+.questionField label {
+  display: block;
+  text-align: center;
+  font-size: 42px;
+  color: aliceblue;
+  margin-bottom: 16px;
 }
 
-#questionInput{
-    background-color: aliceblue;
-    border: 1px solid white;
-    outline: none;
-    font-size: 16px;
-    text-align: center;
-    width: 100%;
-    height: 42px;
+#questionInput {
+  background-color: aliceblue;
+  border: 1px solid white;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 42px;
 }
 
-#inputBtn{
-    background-color: slategrey;
-    color: aliceblue;
-    width: 100%;
-    height: 26px;
-    margin-bottom: auto;
+#inputBtn {
+  background-color: slategrey;
+  color: aliceblue;
+  width: 100%;
+  height: 26px;
+  margin-bottom: auto;
 }
 
-#newBtn{
-    background-color: slategrey;
-    color: aliceblue;
-    width: 100%;
-    height: 26px;
-    margin-bottom: auto;
+#newBtn {
+  background-color: slategrey;
+  color: aliceblue;
+  width: 100%;
+  height: 26px;
+  margin-bottom: auto;
+}
+
+@keyframes jumping {
+  0% {
+    bottom: 5px;
+    transform: rotate(-10deg) scale(0.98);
+  }
+  10% {
+    bottom: 30px;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    bottom: 5px;
+    transform: rotate(10deg) scale(0.98);
+  }
+  60% {
+    bottom: 30px;
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    bottom: 5px;
+    transform: rotate(-10deg) scale(0.98);
+  }
+}
+
+@keyframes shaking {
+  0% {
+    margin-left: -35px;
+  }
+  10% {
+    margin-left: -45px;
+  }
+  20% {
+    margin-left: -35px;
+  }
+  30% {
+    margin-left: -45px;
+  }
+  40% {
+    margin-left: -35px;
+  }
+  50% {
+    margin-left: -40px;
+  }
+  65% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 5px;
+  }
 }
