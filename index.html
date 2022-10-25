@@ -11,14 +11,15 @@
   <body>
     <div class="content">
       <div class="answers">
+        <img class="answerImg" src="" alt="" />
         <img id="baseImg" src="./images/magic8ball_start.png" alt="" />
       </div>
-      <div class="questionField">
+      <form class="questionField">
         <label for="questionInput">Ask me a question</label>
-        <button id="newBtn">New Question</button>
-        <input type="text" id="questionInput" />
+        <button type="button" id="newBtn">New Question</button>
+        <input autocomplete="off" type="text" id="questionInput" />
         <button id="inputBtn">Ask Question</button>
-      </div>
+      </form>
     </div>
   </body>
 </html>
