@@ -18,12 +18,14 @@
   /* outline: 2px solid yellow; */
   width: 420px;
   height: 420px;
+  max-width: 90vw;
+  max-height: 90vw;
   position: relative;
 }
 
 .content img {
   /* outline: 2px solid red; */
-  width: 420px;
+  width: 100%;
   margin-bottom: 42px;
   position: absolute;
 }
@@ -41,8 +43,9 @@
 }
 
 #questionInput {
-  background-color: aliceblue;
+  background-color: rgba(112, 128, 144, 0.701);
   border: 1px solid white;
+  color: aliceblue;
   outline: none;
   font-size: 16px;
   text-align: center;
@@ -55,6 +58,7 @@
   color: aliceblue;
   width: 100%;
   height: 26px;
+  margin-top: 4px;
   margin-bottom: auto;
 }
 
@@ -63,7 +67,7 @@
   color: aliceblue;
   width: 100%;
   height: 26px;
-  margin-bottom: auto;
+  margin-bottom: 4px;
 }
 
 @keyframes jumping {
